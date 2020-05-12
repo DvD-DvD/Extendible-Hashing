@@ -41,6 +41,7 @@ public class Input2 extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         displayfld = new javax.swing.JTextArea();
         outfld = new javax.swing.JTextField();
+        Headlbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
@@ -50,18 +51,18 @@ public class Input2 extends javax.swing.JFrame {
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.setFont(new java.awt.Font("Calisto MT", 0, 10)); // NOI18N
 
-        inp_jlbl.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 16)); // NOI18N
+        inp_jlbl.setFont(new java.awt.Font("Footlight MT Light", 0, 16)); // NOI18N
         inp_jlbl.setForeground(new java.awt.Color(255, 255, 255));
-        inp_jlbl.setText("Enter number:");
+        inp_jlbl.setText("Enter number  :");
 
-        inp_jtxt.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        inp_jtxt.setFont(new java.awt.Font("Footlight MT Light", 0, 12)); // NOI18N
         inp_jtxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 inp_jtxtActionPerformed(evt);
             }
         });
 
-        addjbtn.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        addjbtn.setFont(new java.awt.Font("Footlight MT Light", 0, 14)); // NOI18N
         addjbtn.setText("Add");
         addjbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,7 +70,7 @@ public class Input2 extends javax.swing.JFrame {
             }
         });
 
-        searchjbtn.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        searchjbtn.setFont(new java.awt.Font("Footlight MT Light", 0, 14)); // NOI18N
         searchjbtn.setText("Search");
         searchjbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,7 +78,7 @@ public class Input2 extends javax.swing.JFrame {
             }
         });
 
-        displayjbtn.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        displayjbtn.setFont(new java.awt.Font("Footlight MT Light", 0, 14)); // NOI18N
         displayjbtn.setText("Display");
         displayjbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,70 +86,89 @@ public class Input2 extends javax.swing.JFrame {
             }
         });
 
-        reslbl.setFont(new java.awt.Font("Calisto MT", 1, 12)); // NOI18N
+        reslbl.setFont(new java.awt.Font("Footlight MT Light", 0, 16)); // NOI18N
         reslbl.setForeground(new java.awt.Color(51, 51, 51));
         reslbl.setText("Result");
+
+        jScrollPane1.setBackground(new java.awt.Color(51, 51, 51));
+        jScrollPane1.setBorder(null);
+        jScrollPane1.setForeground(new java.awt.Color(51, 51, 51));
 
         displayfld.setEditable(false);
         displayfld.setBackground(new java.awt.Color(51, 51, 51));
         displayfld.setColumns(20);
+        displayfld.setFont(new java.awt.Font("Footlight MT Light", 0, 12)); // NOI18N
         displayfld.setForeground(new java.awt.Color(255, 255, 255));
         displayfld.setLineWrap(true);
         displayfld.setRows(5);
         displayfld.setWrapStyleWord(true);
         jScrollPane1.setViewportView(displayfld);
 
+        outfld.setEditable(false);
         outfld.setBackground(new java.awt.Color(51, 51, 51));
+        outfld.setFont(new java.awt.Font("Footlight MT Light", 0, 14)); // NOI18N
         outfld.setForeground(new java.awt.Color(255, 255, 255));
+        outfld.setBorder(null);
+
+        Headlbl.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Headlbl.setForeground(new java.awt.Color(255, 255, 255));
+        Headlbl.setText("Extendable Hashing Tool");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(387, 387, 387)
-                .addComponent(outfld, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 210, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(192, 192, 192))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(378, 378, 378)
-                .addComponent(inp_jlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(reslbl, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(291, 291, 291)
+                .addComponent(reslbl, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(inp_jtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(outfld, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 214, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(188, 188, 188))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(addjbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(90, 90, 90)
-                .addComponent(searchjbtn)
-                .addGap(90, 90, 90)
-                .addComponent(displayjbtn)
-                .addGap(342, 342, 342))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(addjbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(90, 90, 90)
+                        .addComponent(searchjbtn)
+                        .addGap(90, 90, 90)
+                        .addComponent(displayjbtn))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Headlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(inp_jlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(72, 72, 72)
+                                .addComponent(inp_jtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(48, 48, 48)))
+                .addGap(345, 345, 345))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(76, 76, 76)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(inp_jlbl)
-                    .addComponent(inp_jtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(reslbl))
+                .addGap(60, 60, 60)
+                .addComponent(Headlbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(inp_jtxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(inp_jlbl))
                 .addGap(71, 71, 71)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(displayjbtn)
                     .addComponent(searchjbtn)
                     .addComponent(addjbtn))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 198, Short.MAX_VALUE)
+                .addGap(136, 136, 136)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(outfld, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(outfld, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(reslbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(185, 185, 185))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(112, 112, 112))))
+                        .addGap(107, 107, 107))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -174,7 +194,7 @@ public class Input2 extends javax.swing.JFrame {
         String inp = inp_jtxt.getText();
         inp_jtxt.setText("");
         outfld.setText("");
-        outfld.setVisible(false);
+       // outfld.setVisible(false);
         reslbl.setForeground(new Color(51,51,51));
         int key = Integer.parseInt(inp);
         t.insert(key,false);
@@ -185,7 +205,7 @@ public class Input2 extends javax.swing.JFrame {
         // TODO add your handling code here:
         String inp = inp_jtxt.getText();
         
-        outfld.setVisible(true);
+       /// outfld.setVisible(true);
         outfld.setText("");
         inp_jtxt.setText("");
         reslbl.setForeground(new Color(255,255,255));
@@ -247,6 +267,7 @@ public class Input2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Headlbl;
     private javax.swing.JButton addjbtn;
     private javax.swing.JTextArea displayfld;
     private javax.swing.JButton displayjbtn;
