@@ -42,6 +42,7 @@ public class Input2 extends javax.swing.JFrame {
         displayfld = new javax.swing.JTextArea();
         outfld = new javax.swing.JTextField();
         Headlbl = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
@@ -88,7 +89,7 @@ public class Input2 extends javax.swing.JFrame {
 
         reslbl.setFont(new java.awt.Font("Footlight MT Light", 0, 16)); // NOI18N
         reslbl.setForeground(new java.awt.Color(51, 51, 51));
-        reslbl.setText("Result");
+        reslbl.setText("Result :");
 
         jScrollPane1.setBackground(new java.awt.Color(51, 51, 51));
         jScrollPane1.setBorder(null);
@@ -97,7 +98,7 @@ public class Input2 extends javax.swing.JFrame {
         displayfld.setEditable(false);
         displayfld.setBackground(new java.awt.Color(51, 51, 51));
         displayfld.setColumns(20);
-        displayfld.setFont(new java.awt.Font("Footlight MT Light", 0, 12)); // NOI18N
+        displayfld.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         displayfld.setForeground(new java.awt.Color(255, 255, 255));
         displayfld.setLineWrap(true);
         displayfld.setRows(5);
@@ -110,9 +111,11 @@ public class Input2 extends javax.swing.JFrame {
         outfld.setForeground(new java.awt.Color(255, 255, 255));
         outfld.setBorder(null);
 
-        Headlbl.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Headlbl.setFont(new java.awt.Font("Sylfaen", 0, 30)); // NOI18N
         Headlbl.setForeground(new java.awt.Color(255, 255, 255));
         Headlbl.setText("Extendible Hashing Tool");
+
+        jSeparator1.setBackground(new java.awt.Color(102, 102, 102));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -123,34 +126,36 @@ public class Input2 extends javax.swing.JFrame {
                 .addComponent(reslbl, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(outfld, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 214, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 168, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(188, 188, 188))
+            .addComponent(jSeparator1)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(inp_jlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(72, 72, 72)
+                        .addComponent(inp_jtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(393, 393, 393))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(addjbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(90, 90, 90)
                         .addComponent(searchjbtn)
                         .addGap(90, 90, 90)
-                        .addComponent(displayjbtn))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(Headlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(inp_jlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(72, 72, 72)
-                                .addComponent(inp_jtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(48, 48, 48)))
-                .addGap(345, 345, 345))
+                        .addComponent(displayjbtn)
+                        .addGap(345, 345, 345))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(384, 384, 384)
+                .addComponent(Headlbl)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(60, 60, 60)
+                .addGap(39, 39, 39)
                 .addComponent(Headlbl)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(inp_jtxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(inp_jlbl))
@@ -159,16 +164,18 @@ public class Input2 extends javax.swing.JFrame {
                     .addComponent(displayjbtn)
                     .addComponent(searchjbtn)
                     .addComponent(addjbtn))
-                .addGap(136, 136, 136)
+                .addGap(41, 41, 41)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(187, 187, 187)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(outfld, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(reslbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(185, 185, 185))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(107, 107, 107))))
+                            .addComponent(reslbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(85, 85, 85)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(79, 79, 79))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -204,7 +211,7 @@ public class Input2 extends javax.swing.JFrame {
     private void searchjbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchjbtnActionPerformed
         // TODO add your handling code here:
         String inp = inp_jtxt.getText();
-        
+        //StatusDisplayer.getDefault.setStatusText(" ");
        /// outfld.setVisible(true);
         outfld.setText("");
         inp_jtxt.setText("");
@@ -275,6 +282,7 @@ public class Input2 extends javax.swing.JFrame {
     private javax.swing.JTextField inp_jtxt;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField outfld;
     private javax.swing.JLabel reslbl;
     private javax.swing.JButton searchjbtn;
