@@ -112,7 +112,7 @@ public class Input2 extends javax.swing.JFrame {
 
         Headlbl.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Headlbl.setForeground(new java.awt.Color(255, 255, 255));
-        Headlbl.setText("Extendable Hashing Tool");
+        Headlbl.setText("Extendible Hashing Tool");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
