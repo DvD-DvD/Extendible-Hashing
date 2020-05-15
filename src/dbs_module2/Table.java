@@ -135,7 +135,7 @@ public class Table {
         for(int i=0;i<buckets.size();++i){
             int extra=buckets.get(i).getDepth();
             str=bucketID(i);
-            sho = sho + bucketID(i);
+            //sho = sho + bucketID(i);
             if(duplicates || !displayed.contains(str)){
                 displayed.add(str);
                 //will leave space while printing buckets whose local depth is less than the global depth
@@ -144,11 +144,12 @@ public class Table {
                     sho = sho + " ";
                 }
                 System.out.print(str+" :: ");
-                sho = sho + " : ";
+                sho = sho + str + " : ";
                 buckets.get(i).display();
+                sho = sho + "\n";
             }
             System.out.println();
-            sho = sho + "\n";
+            //sho = sho + "\n";
         }
     }
 }

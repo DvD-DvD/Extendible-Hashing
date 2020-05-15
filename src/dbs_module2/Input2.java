@@ -228,9 +228,11 @@ public class Input2 extends javax.swing.JFrame {
 
     private void displayjbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_displayjbtnActionPerformed
         // TODO add your handling code here:
+        Table.sho = "";
         t.show_table(false);
         displayfld.setText("");
         displayfld.setText(Table.sho);
+        System.out.println(Table.sho);
     }//GEN-LAST:event_displayjbtnActionPerformed
 
     private void inp_jtxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inp_jtxtActionPerformed
