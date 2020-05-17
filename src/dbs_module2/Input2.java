@@ -98,7 +98,7 @@ public class Input2 extends javax.swing.JFrame {
         displayfld.setEditable(false);
         displayfld.setBackground(new java.awt.Color(51, 51, 51));
         displayfld.setColumns(20);
-        displayfld.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        displayfld.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         displayfld.setForeground(new java.awt.Color(255, 255, 255));
         displayfld.setLineWrap(true);
         displayfld.setRows(5);
@@ -126,8 +126,8 @@ public class Input2 extends javax.swing.JFrame {
                 .addComponent(reslbl, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(outfld, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 168, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 109, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(188, 188, 188))
             .addComponent(jSeparator1)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
