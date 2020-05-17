@@ -144,7 +144,7 @@ public class Table {
                     sho = sho + " ";
                 }
                 System.out.print(str+" :: ");
-                sho = sho + str + " : ";
+                sho = sho + str +"(LD:"+ str.length() + ") "  + " : ";
                 buckets.get(i).display();
                 sho = sho + "\n";
             }
