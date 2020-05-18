@@ -73,8 +73,8 @@ public class Table {
         result = "";
         System.out.println("Searching key "+key+" in bucket "+bucketID(bucketNumber));
         if(buckets.get(bucketNumber).search(key) == 1){
-            result = result + key + " is found in " + bucketID(bucketNumber);
-            System.out.println(key + " is found in " + bucketID(bucketNumber));
+            result = result +"KEY: "+ key + " is found in the Bucket: " + bucketID(bucketNumber);
+            System.out.println("KEY:"+ key + " is found in the Bucket: " + bucketID(bucketNumber));
         }
         
     }
@@ -126,12 +126,12 @@ public class Table {
     //duplicates will be used to incase the bucket is not split and we then want to print it as different or not
     void show_table(boolean duplicates){
         String str;
-        sho = "";
+        sho = "Current Directory Structure:\n";
         //this set is used to mark if a particular value has been printed before
         //this will have no significance if we are printing duplicates
         HashSet<String> displayed = new HashSet<String>();
         System.out.println("Global depth is : "+globalDepth);
-        sho = sho + "Global depth is : "+globalDepth + "\n";
+        sho = sho + "Global depth is : "+globalDepth + "\n\n";
         for(int i=0;i<buckets.size();++i){
             int extra=buckets.get(i).getDepth();
             str=bucketID(i);
@@ -144,9 +144,9 @@ public class Table {
                     sho = sho + " ";
                 }
                 System.out.print(str+" :: ");
-                sho = sho + str +"(LD:"+ str.length() + ") "  + " : ";
+                sho = sho + str +" (Local Depth : "+ str.length() + ") "  + " : ";
                 buckets.get(i).display();
-                sho = sho + "\n";
+                sho = sho + "\n\n";
             }
             System.out.println();
             //sho = sho + "\n";
