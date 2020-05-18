@@ -6,6 +6,7 @@
 package dbs_module2;
 import java.awt.Color;
 import javax.swing.JOptionPane;
+import java.awt.event.KeyAdapter;
 
 /**
  *
@@ -45,8 +46,10 @@ public class Input2 extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Extendible Hasher");
         setBackground(new java.awt.Color(51, 51, 51));
         setForeground(new java.awt.Color(51, 51, 51));
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -60,6 +63,11 @@ public class Input2 extends javax.swing.JFrame {
         inp_jtxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 inp_jtxtActionPerformed(evt);
+            }
+        });
+        inp_jtxt.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                inp_jtxtKeyTyped(evt);
             }
         });
 
@@ -174,11 +182,11 @@ public class Input2 extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -231,6 +239,15 @@ public class Input2 extends javax.swing.JFrame {
     private void inp_jtxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inp_jtxtActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_inp_jtxtActionPerformed
+
+    private void inp_jtxtKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_inp_jtxtKeyTyped
+        // TODO add your handling code here:
+        char c =evt.getKeyChar();
+        int s = c;
+        if(!(Character.isDigit(c) || c==8)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_inp_jtxtKeyTyped
 
     /**
      * @param args the command line arguments
