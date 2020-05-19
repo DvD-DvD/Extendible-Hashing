@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 
+
 /**
  *
  * @author StylishDheeru
@@ -15,6 +16,7 @@ import java.util.Iterator;
 public class Table {
     	 int globalDepth,bfr;
          String result  = "";
+         String exists = "";
          static String sho = "";
     ArrayList<Bucket> buckets=new ArrayList<Bucket> (0);  //buckets will be storing individual buckets of the directory
     Table(int globalDepth,int bfr){
@@ -103,6 +105,7 @@ public class Table {
     }
 
     void insert(int key,boolean reinserted){
+        exists = "";
         int bucketNumber=hashFunction(key);
         int status=buckets.get(bucketNumber).insert(key);
         if(status==1){
@@ -119,7 +122,7 @@ public class Table {
         }
         else{
             System.out.println("Key "+key+" already exists in bucket "+bucketID(bucketNumber));
-            
+            exists = exists + "Key "+key+" already exists in bucket "+bucketID(bucketNumber);
         }
     }
 

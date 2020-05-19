@@ -200,7 +200,7 @@ public class Input2 extends javax.swing.JFrame {
     private void addjbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addjbtnActionPerformed
         // TODO add your handling code here:
         if(inp_jtxt.getText().equals("") == true){
-            JOptionPane.showMessageDialog(rootPane,"Invalid Input");
+            JOptionPane.showMessageDialog(rootPane,"Please give appropriate input");
             return;
         }
         String inp = inp_jtxt.getText();
@@ -210,6 +210,9 @@ public class Input2 extends javax.swing.JFrame {
         reslbl.setForeground(new Color(51,51,51));
         int key = Integer.parseInt(inp);
         t.insert(key,false);
+        if(!t.exists.equals("")){
+            JOptionPane.showMessageDialog(rootPane,t.exists);
+        }
         Table.sho = "";
         t.show_table(false);
         displayfld.setText("");
@@ -220,6 +223,10 @@ public class Input2 extends javax.swing.JFrame {
 
     private void searchjbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchjbtnActionPerformed
         // TODO add your handling code here:
+        if(inp_jtxt.getText().equals("") == true){
+            JOptionPane.showMessageDialog(rootPane,"Invalid Input");
+            return;
+        }
         String inp = inp_jtxt.getText();
         //StatusDisplayer.getDefault.setStatusText(" ");
        /// outfld.setVisible(true);
@@ -232,7 +239,7 @@ public class Input2 extends javax.swing.JFrame {
        // outfld.setText("Sup punk");
         System.out.println("out: "+ t.result);
         if(t.result.equals("") == true){
-            outfld.setText(inp+": Not Found");
+            outfld.setText("Key: "+inp+": Not Found");
         }
     }//GEN-LAST:event_searchjbtnActionPerformed
 
