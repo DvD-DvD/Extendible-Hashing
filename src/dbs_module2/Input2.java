@@ -10,7 +10,7 @@ import java.awt.event.KeyAdapter;
 
 /**
  *
- * @author StylishDheeru
+ * @author Vishal
  */
 public class Input2 extends javax.swing.JFrame {
 
