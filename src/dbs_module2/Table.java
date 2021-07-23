@@ -11,7 +11,7 @@ import java.util.Iterator;
 
 /**
  *
- * @author StylishDheeru
+ * @author Vishal
  */
 public class Table {
     	 int globalDepth,bfr;
