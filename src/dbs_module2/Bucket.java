@@ -71,7 +71,6 @@ public class Bucket {
     }
     //searching in that bucket
     int search(int key){
-        Iterator<Integer> it =values.iterator();
         if(values.contains(key)){
             System.out.println("Key exists in a bucket");
             return 1;
